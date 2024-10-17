@@ -1,0 +1,215 @@
+/* Container for the vertical dashboard */
+.parent{
+    display: flex;
+    flex:row;
+    justify-content: space-between; /* Space between dashboard and cards */
+    padding: 1.25rem;
+    flex-wrap: wrap;
+  }
+/* Ensure the body and html elements take full height */
+/*html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+ /*   align-items: center; /* Center vertically */
+ .career-library-dashboard,h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #0a063b;
+ }
+
+/* Container for all filters */
+/* Container for the career library dashboard */
+.career-library-dashboard {
+    background-color: #dfdfe2; /* Light background color */
+    border-radius: 0.625rem; /* Rounded corners */
+    padding: 1.25rem; /* Padding inside the container */
+    width: fit-content; /* Adjust width to fit the content */
+    left:3.125rem;
+    margin: 1.25rem 3.75rem; /* Align to the left with some margin on top and bottom */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the dashboard title */
+.career-library-dashboard h2 {
+    font-size: 1.625rem; /* Larger font size for title */
+    color: #464555; /* Dark text color */
+    margin-bottom: 0.9375rem; /* Space below the title */
+    text-align: left; /* Align the title to the left */
+}
+
+/* List styling */
+.career-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* List item styling */
+.career-list li {
+    margin-bottom: 0.75rem; /* Space below each list item */
+}
+
+/* Anchor tag styling for list items */
+.career-list li a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove underline */
+    color: #0a063b; /* Darker text color */
+    font-size: 1.25rem; /* Larger font size */
+    padding: 0.75rem; /* Padding around text */
+    display: block; /* Make the entire block clickable */
+    background-color: #e6f4f1; /* Light panel background color */
+    border-radius: 0.3125rem; /* Rounded corners for hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for anchor tags */
+.career-list li a:hover {
+    background-color: #bebdd4; /* Slightly darker background on hover */
+    color: #065670; /* Change text color on hover */
+}
+
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-left:3.125rem;
+   
+    padding: 1.25rem;
+    background-color: #fffbfb; /* Light background color */
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 1.25rem; /* Center the filter container */
+    height: 20vh; /* Set the height */
+    width: fit-content; /* Adjust width to fit content */
+}
+
+.filter-container {
+    display: flex;
+    align-self:flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+   
+}
+
+.filter-label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    color: #464555; /* Darker text color */
+    margin-bottom: 0.625rem;
+}
+
+.filter-select {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 0;
+    font-size: 1.125rem;
+    color: #464555; /* Darker text color */
+    background-color: #a6a6dd; /* Glass panel-like appearance */
+    border: 0.125rem solid #c0a975; /* Border color */
+    border-radius: 0.625rem;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    
+    margin:0;
+}
+
+.filter-select:hover {
+    background-color: rgba(142, 141, 185, 0.1); /* Hover background effect */
+    color: #008bba; /* Text color on hover */
+    transform: translateY(-0.1875rem); /* Slight lift effect on hover */
+}
+.cards-container {
+    top: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 1.25rem; /* Space between cards */
+    padding: 0rem;
+    background-color: #f9f8ff;
+    width: 65%;
+    position: relative;
+}
+
+.card {
+    background-color: #e6f4f1; /* Light background */
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensure the card takes up the full width */
+}
+
+.card:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: #b4b4af; /* Background change on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 9.375rem;
+    object-fit: cover; /* Cover the entire image space */
+    border-bottom: 0.125rem solid #8e8db9; /* Bottom border to match the color palette */
+}
+
+.card-text {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0;
+    margin-left:5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #202020; /* Darker text color */
+     /* Subtle background for the text section */
+    border-top: 0.0625rem solid #008bba; /* Top border to define separation */
+    width: 100%; /* Ensure the text container spans the full width of the card */
+    text-align: center; /* Center the text within the flexbox */
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+/* Responsive Design with Media Queries */
+@media screen and (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on smaller screens */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parent {
+        flex-direction: column; /* Stack dashboard and cards vertically */
+        padding: 1rem;
+    }
+
+    .career-library-dashboard {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .filters-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filter-select, .filter-label, .card-text {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .cards-container {
+        width: 100%;
+    }
+
+    .card-image {
+        height: 6.25rem; /* Reduce image height for mobile */
+    }
+}

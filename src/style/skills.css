@@ -1,0 +1,114 @@
+/* Wrapper for the entire content */
+.content-wrapper {
+    width: 100%;
+    padding: 1.25rem;
+     /* Background color for the wrapper */
+}
+
+/* Interest Section Styles */
+.interest-section {
+    margin-bottom: 1.875rem;
+}
+
+.heading-interest {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    color: #ffffff; /* Dark blue color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.interest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.interest-card {
+    width: calc(25% - 1.25rem);
+    background-color: #ffffff; /* White background for cards */
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    padding: 1.25rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.interest-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.3125rem);
+}
+
+.interest-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.interest-text {
+    font-size: 23spx;
+    margin-top: 0.9375rem;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Separator */
+.separator {
+    border: 0;
+    border-top: 0.1875rem solid #ddd;
+    margin: 1.875rem 0;
+}
+
+/* Video Section Styles */
+.video-section {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    margin-bottom: 1.875rem;
+    padding: 0.625rem 0;
+}
+
+.video-box {
+    flex: 1 0 calc(20% - 1.25rem);
+    background-color: #ffffff; /* White background for video boxes */
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.75rem;
+    padding: 0.9375rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.video-title {
+    font-size: 1.25rem;
+    color: #073175; /* Dark blue color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Resource and Quiz Section Styles */
+.resource-quiz-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.resource-box, .quiz-box {
+    width: calc(50% - 1.25rem);
+    background-color: #d4ddee; /* White background for boxes */
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.75rem;
+    height:fit-content;
+    padding: 0.625rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.resource-title, .quiz-title {
+    font-size: 1.75rem;
+    text-align:center;
+    left :1.875rem;
+    color: #6e0620; /* Bold red color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
